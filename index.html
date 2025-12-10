@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecánica Ferretera | Especialistas en Bosch y Soluciones Industriales</title>
+    <meta name="description"
+        content="Centro de Servicio Técnico especializado en herramientas industriales Bosch, Makita, DeWalt. Reparación de licuadoras, motores eléctricos y línea blanca.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        bosch: { 500: '#005691', 600: '#004576' },
+                        industrial: { 400: '#FBBF24', 500: '#F59E0B' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.9) 100%), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23334155" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .pulse-glow {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 20px 10px rgba(245, 158, 11, 0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-slate-900 text-slate-200 font-sans">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-slate-900/95 backdrop-blur border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl">🔧</span>
+                <span class="font-bold text-xl text-white">Mecánica <span
+                        class="text-industrial-400">Ferretera</span></span>
+            </div>
+            <div class="hidden md:flex gap-6 text-sm">
+                <a href="#servicios" class="hover:text-industrial-400 transition">Servicios Taller</a>
+                <a href="#venta" class="hover:text-industrial-400 transition">Venta y Refacciones</a>
+                <a href="#ubicacion" class="hover:text-industrial-400 transition">Ubicación</a>
+                <a href="#contacto" class="hover:text-industrial-400 transition">Contacto</a>
+            </div>
+            <a href="https://wa.me/527775630603" target="_blank"
+                class="bg-green-500 hover:bg-green-400 text-white font-bold px-4 py-2 rounded-lg text-sm transition flex items-center gap-2">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 py-16 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span
+                    class="inline-block bg-bosch-500/20 text-blue-400 px-4 py-1 rounded-full text-sm mb-4 border border-bosch-500/30">📍
+                    Cuernavaca, Morelos</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                    Soluciones Integrales en <span class="text-blue-500">Herramienta Industrial</span> y <span
+                        class="text-industrial-400">Hogar</span>
+                </h1>
+                <p class="text-slate-400 text-lg mb-8 max-w-xl">Centro de Servicio Especializado y Venta de Refacciones
+                    Originales. Diagnóstico transparente y atención a flotillas.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#servicios"
+                        class="bg-industrial-500 hover:bg-industrial-400 text-slate-900 font-bold px-8 py-4 rounded-xl text-lg transition pulse-glow">Cotizar
+                        Reparación</a>
+                    <a href="#venta"
+                        class="border-2 border-yellow-500 text-yellow-400 hover:bg-yellow-500 hover:text-slate-900 font-bold px-8 py-4 rounded-xl text-lg transition">Ver
+                        Herramienta Nueva →</a>
+                </div>
+            </div>
+            <div class="hidden lg:block">
+                <div class="relative bg-slate-800/50 rounded-2xl p-8 border border-slate-700">
+                    <div class="text-6xl text-center mb-4">🔩⚙️🔧</div>
+                    <div class="grid grid-cols-2 gap-4 text-center">
+                        <div class="bg-slate-700/50 p-4 rounded-xl"><span
+                                class="text-3xl font-bold text-industrial-400">15+</span>
+                            <p class="text-sm text-slate-400">Años de Exp.</p>
+                        </div>
+                        <div class="bg-slate-700/50 p-4 rounded-xl"><span
+                                class="text-3xl font-bold text-blue-400">100%</span>
+                            <p class="text-sm text-slate-400">Refac. Originales</p>
+                        </div>
+                        <div class="bg-slate-700/50 p-4 rounded-xl"><span
+                                class="text-3xl font-bold text-green-400">5K+</span>
+                            <p class="text-sm text-slate-400">Equipos Reparados</p>
+                        </div>
+                        <div class="bg-slate-700/50 p-4 rounded-xl"><span
+                                class="text-3xl font-bold text-purple-400">24h</span>
+                            <p class="text-sm text-slate-400">Entrega Rápida</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Catálogo de Servicios -->
+    <section id="servicios" class="py-20 bg-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestros <span
+                        class="text-industrial-400">Servicios</span></h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Soluciones técnicas profesionales para cada necesidad
+                    industrial y doméstica.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1: Herramientas -->
+                <div
+                    class="card-hover bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500">
+                    <div class="h-40 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=400&h=200&fit=crop&q=80"
+                            alt="Herramientas eléctricas profesionales"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Herramientas Eléctricas</h3>
+                        <p class="text-slate-400 text-sm mb-4">Taladros, esmeriles, demoledores. Especialistas Bosch,
+                            Makita, DeWalt, Milwaukee.</p>
+                        <div class="bg-slate-700/50 rounded-lg p-3 mb-4">
+                            <p class="text-xs text-slate-500">Mano de obra desde</p>
+                            <p class="text-2xl font-bold text-blue-400">$150 <span
+                                    class="text-sm text-slate-400">MXN</span></p>
+                        </div>
+                        <ul class="text-xs text-slate-400 space-y-1">
+                            <li>✓ Diagnóstico con diagramas</li>
+                            <li>✓ Precio especial flotillas</li>
+                            <li>✓ Refacciones aparte</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card 2: Gastronomía -->
+                <div
+                    class="card-hover bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-green-500">
+                    <div class="h-40 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1585515320310-259814833e62?w=400&h=200&fit=crop&q=80"
+                            alt="Licuadoras profesionales"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Línea Gastronómica</h3>
+                        <p class="text-slate-400 text-sm mb-4">Licuadoras y batidoras caseras e industriales.
+                            KitchenAid, Oster, Ninja, Nutribullet.</p>
+                        <div class="bg-slate-700/50 rounded-lg p-3 mb-4">
+                            <p class="text-xs text-slate-500">Reparación desde</p>
+                            <p class="text-2xl font-bold text-green-400">$150 <span
+                                    class="text-sm text-slate-400">MXN</span></p>
+                        </div>
+                        <ul class="text-xs text-slate-400 space-y-1">
+                            <li>✓ Cambio motor hasta $650</li>
+                            <li>✓ Coples y pines</li>
+                            <li>✓ Industrial: bajo cotización</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card 3: Motores -->
+                <div
+                    class="card-hover bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-purple-500">
+                    <div class="h-40 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=400&h=200&fit=crop&q=80"
+                            alt="Motores eléctricos industriales"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Motores Eléctricos</h3>
+                        <p class="text-slate-400 text-sm mb-4">Embobinado y reparación profesional de motores de 1 HP
+                            hasta 30 HP.</p>
+                        <div class="bg-slate-700/50 rounded-lg p-3 mb-4">
+                            <p class="text-xs text-slate-500">Cotización</p>
+                            <p class="text-2xl font-bold text-purple-400">Según HP</p>
+                        </div>
+                        <ul class="text-xs text-slate-400 space-y-1">
+                            <li>✓ Embobinado profesional</li>
+                            <li>✓ 1 HP - 30 HP</li>
+                            <li>✓ Diagnóstico incluido</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card 4: Línea Blanca -->
+                <div
+                    class="card-hover bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-industrial-400">
+                    <div class="h-40 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1558618047-f4a0a14a7c15?w=400&h=200&fit=crop&q=80"
+                            alt="Lavadora servicio técnico"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Línea Blanca</h3>
+                        <p class="text-slate-400 text-sm mb-4">Lavadoras y refrigeradores. Servicio exclusivamente a
+                            domicilio.</p>
+                        <div class="bg-slate-700/50 rounded-lg p-3 mb-4">
+                            <p class="text-xs text-slate-500">Visita desde</p>
+                            <p class="text-2xl font-bold text-industrial-400">$350 <span
+                                    class="text-sm text-slate-400">MXN</span></p>
+                        </div>
+                        <ul class="text-xs text-slate-400 space-y-1">
+                            <li>✓ A domicilio únicamente</li>
+                            <li>✓ Visita reembolsable</li>
+                            <li>✓ Foráneo hasta $900</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora de Visita -->
+    <section id="calculadora" class="py-20">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="bg-gradient-to-br from-slate-800 to-slate-800/50 rounded-3xl p-8 border border-slate-700">
+                <div class="text-center mb-8">
+                    <span class="text-4xl">📍</span>
+                    <h2 class="text-2xl md:text-3xl font-bold mt-4">Calculadora de Visita Técnica</h2>
+                    <p class="text-slate-400">Conoce el costo de diagnóstico para Línea Blanca a domicilio</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-4 mb-6">
+                    <button onclick="calcularVisita('centro')"
+                        class="zone-btn bg-slate-700 hover:bg-blue-500 p-6 rounded-xl text-center transition border-2 border-transparent"
+                        data-zone="centro">
+                        <span class="text-2xl block mb-2">🏢</span>
+                        <span class="font-bold">Zona Centro</span>
+                        <p class="text-xs text-slate-400 mt-1">Hasta 5km</p>
+                    </button>
+                    <button onclick="calcularVisita('periferia')"
+                        class="zone-btn bg-slate-700 hover:bg-industrial-500 p-6 rounded-xl text-center transition border-2 border-transparent"
+                        data-zone="periferia">
+                        <span class="text-2xl block mb-2">🏘️</span>
+                        <span class="font-bold">Periferia</span>
+                        <p class="text-xs text-slate-400 mt-1">5-15km</p>
+                    </button>
+                    <button onclick="calcularVisita('foraneo')"
+                        class="zone-btn bg-slate-700 hover:bg-red-500 p-6 rounded-xl text-center transition border-2 border-transparent"
+                        data-zone="foraneo">
+                        <span class="text-2xl block mb-2">🚗</span>
+                        <span class="font-bold">Foráneo</span>
+                        <p class="text-xs text-slate-400 mt-1">+15km</p>
+                    </button>
+                </div>
+                <div id="resultado" class="hidden bg-slate-900 rounded-xl p-6 text-center">
+                    <p class="text-slate-400 mb-2">Costo de visita técnica:</p>
+                    <p id="precio" class="text-4xl font-bold text-industrial-400 mb-2"></p>
+                    <p class="text-sm text-green-400">✓ Se abona a la reparación si se acepta el servicio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marcas -->
+    <section id="marcas" class="py-20 bg-slate-800/30">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-2">Marcas que <span class="text-industrial-400">Trabajamos</span></h2>
+            <p class="text-slate-400 mb-10">Refacciones 100% originales para todas las marcas</p>
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+                <div
+                    class="text-center p-5 bg-gradient-to-br from-blue-600/20 to-blue-800/10 rounded-2xl border border-blue-500/30 hover:border-blue-400 transition hover:scale-105">
+                    <span class="text-3xl md:text-4xl font-black text-blue-400 tracking-tight">BOSCH</span>
+                </div>
+                <div
+                    class="text-center p-5 bg-gradient-to-br from-teal-600/20 to-teal-800/10 rounded-2xl border border-teal-500/30 hover:border-teal-400 transition hover:scale-105">
+                    <span class="text-3xl md:text-4xl font-black text-teal-400 tracking-tight">Makita</span>
+                </div>
+                <div
+                    class="text-center p-5 bg-gradient-to-br from-yellow-600/20 to-yellow-800/10 rounded-2xl border border-yellow-500/30 hover:border-yellow-400 transition hover:scale-105">
+                    <span class="text-3xl md:text-4xl font-black text-yellow-400 tracking-tight">DeWALT</span>
+                </div>
+                <div
+                    class="text-center p-5 bg-gradient-to-br from-red-600/20 to-red-800/10 rounded-2xl border border-red-500/30 hover:border-red-400 transition hover:scale-105">
+                    <span class="text-3xl md:text-4xl font-black text-red-500 tracking-tight">MILWAUKEE</span>
+                </div>
+                <div
+                    class="text-center p-5 bg-gradient-to-br from-slate-600/20 to-slate-800/10 rounded-2xl border border-slate-500/30 hover:border-slate-400 transition hover:scale-105">
+                    <span class="text-2xl md:text-3xl font-black text-slate-300 tracking-tight">KitchenAid</span>
+                </div>
+                <div
+                    class="text-center p-5 bg-gradient-to-br from-slate-600/20 to-slate-800/10 rounded-2xl border border-slate-500/30 hover:border-slate-400 transition hover:scale-105">
+                    <span class="text-3xl md:text-4xl font-black text-slate-300 tracking-tight">OSTER</span>
+                </div>
+            </div>
+            <div class="mt-12 grid md:grid-cols-3 gap-6">
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                    <span class="text-3xl">✅</span>
+                    <h3 class="font-bold mt-3 mb-2">Refacciones Originales</h3>
+                    <p class="text-sm text-slate-400">Garantizamos piezas 100% originales en todas las reparaciones.</p>
+                </div>
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                    <span class="text-3xl">🏭</span>
+                    <h3 class="font-bold mt-3 mb-2">Atención a Flotillas</h3>
+                    <p class="text-sm text-slate-400">Precios especiales por volumen para contratistas y empresas.</p>
+                </div>
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                    <span class="text-3xl">📋</span>
+                    <h3 class="font-bold mt-3 mb-2">Diagramas Técnicos</h3>
+                    <p class="text-sm text-slate-400">Diagnóstico profesional con diagramas de despiece oficiales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Preguntas <span
+                    class="text-industrial-400">Frecuentes</span></h2>
+            <div class="space-y-4">
+                <details class="bg-slate-800 rounded-xl p-5 border border-slate-700 group">
+                    <summary class="font-bold cursor-pointer flex justify-between items-center">¿Las refacciones son
+                        originales?<span class="text-industrial-400 group-open:rotate-45 transition">+</span></summary>
+                    <p class="text-slate-400 mt-3 text-sm">Sí, utilizamos refacciones 100% originales en todas nuestras
+                        reparaciones. Esto garantiza la durabilidad y el rendimiento óptimo de tu equipo.</p>
+                </details>
+                <details class="bg-slate-800 rounded-xl p-5 border border-slate-700 group">
+                    <summary class="font-bold cursor-pointer flex justify-between items-center">¿Cuánto tardan las
+                        reparaciones?<span class="text-industrial-400 group-open:rotate-45 transition">+</span>
+                    </summary>
+                    <p class="text-slate-400 mt-3 text-sm">Entrega inmediata si hay stock de refacciones. Si es sobre
+                        pedido: <strong>3 a 8 días hábiles</strong> dependiendo de la pieza requerida.</p>
+                </details>
+                <details class="bg-slate-800 rounded-xl p-5 border border-slate-700 group">
+                    <summary class="font-bold cursor-pointer flex justify-between items-center">¿Tienen servicio de
+                        recolección?<span class="text-industrial-400 group-open:rotate-45 transition">+</span></summary>
+                    <p class="text-slate-400 mt-3 text-sm">No contamos con servicio de recolección para herramientas
+                        individuales. El cliente debe traer el equipo al taller. <strong>Excepción:</strong> lotes
+                        grandes de empresas (consultarnos).</p>
+                </details>
+                <details class="bg-slate-800 rounded-xl p-5 border border-slate-700 group">
+                    <summary class="font-bold cursor-pointer flex justify-between items-center">¿La visita a domicilio
+                        es reembolsable?<span class="text-industrial-400 group-open:rotate-45 transition">+</span>
+                    </summary>
+                    <p class="text-slate-400 mt-3 text-sm">Sí, el costo de la visita técnica ($350-$900 según ubicación)
+                        <strong>se abona a la reparación</strong> si el cliente acepta el presupuesto.
+                    </p>
+                </details>
+                <details class="bg-slate-800 rounded-xl p-5 border border-slate-700 group">
+                    <summary class="font-bold cursor-pointer flex justify-between items-center">¿Manejan garantía?<span
+                            class="text-industrial-400 group-open:rotate-45 transition">+</span></summary>
+                    <p class="text-slate-400 mt-3 text-sm">Sí, todas nuestras reparaciones incluyen garantía. El período
+                        varía según el tipo de servicio y será indicado en tu recibo.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN VENTA Y REFACCIONES -->
+    <section id="venta" class="py-20 bg-gradient-to-br from-yellow-900/20 to-slate-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span
+                    class="inline-block bg-yellow-500/20 text-yellow-400 px-4 py-1 rounded-full text-sm mb-4 border border-yellow-500/30">🛒
+                    Showroom</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Venta de Equipo y <span
+                        class="text-yellow-400">Refacciones Originales</span></h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Además de reparación, contamos con herramienta nueva y
+                    refacciones originales.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="bg-slate-800 rounded-2xl p-8 border-2 border-yellow-500/50 hover:border-yellow-400 transition card-hover">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-yellow-500/20 rounded-xl flex items-center justify-center text-4xl">🔧
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-yellow-400">Herramienta Nueva</h3>
+                            <p class="text-slate-400">Equipos de línea y uso rudo</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-lg text-sm font-bold">BOSCH</span>
+                        <span class="bg-teal-500/20 text-teal-400 px-3 py-1 rounded-lg text-sm font-bold">Makita</span>
+                        <span
+                            class="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-lg text-sm font-bold">DeWALT</span>
+                        <span class="bg-red-500/20 text-red-400 px-3 py-1 rounded-lg text-sm font-bold">Milwaukee</span>
+                    </div>
+                    <p class="text-slate-300">Taladros, rotomartillos, esmeriles, demoledores y más.</p>
+                </div>
+                <div
+                    class="bg-slate-800 rounded-2xl p-8 border-2 border-yellow-500/50 hover:border-yellow-400 transition card-hover">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-yellow-500/20 rounded-xl flex items-center justify-center text-4xl">⚙️
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-yellow-400">Refacciones Originales</h3>
+                            <p class="text-slate-400">Bosch y multimarcas</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 mb-6 text-slate-300">
+                        <li>✓ Carbones originales</li>
+                        <li>✓ Inducidos y estatores</li>
+                        <li>✓ Interruptores y switches</li>
+                        <li>✓ Baleros y engranes</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="https://wa.me/527775630603?text=Hola,%20quiero%20consultar%20disponibilidad" target="_blank"
+                    class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white font-bold px-8 py-4 rounded-xl text-lg transition">
+                    � Consulta disponibilidad por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO Y UBICACIÓN -->
+    <section id="ubicacion" class="py-20 bg-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Encuéntranos en <span
+                        class="text-industrial-400">Cuernavaca</span></h2>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="rounded-2xl overflow-hidden border border-slate-700 h-80 lg:h-auto">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.5!2d-99.234!3d18.921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDU1JzE1LjYiTiA5OcKwMTQnMDIuNCJX!5e0!3m2!1ses!2smx!4v1702234567890"
+                        width="100%" height="100%" style="border:0;min-height:320px" allowfullscreen
+                        loading="lazy"></iframe>
+                </div>
+                <div id="contacto" class="bg-slate-800 rounded-2xl p-8 border border-slate-700">
+                    <h3 class="text-2xl font-bold mb-6">Información de Contacto</h3>
+                    <div class="space-y-5">
+                        <div class="flex items-start gap-4">
+                            <span class="text-2xl">📍</span>
+                            <div>
+                                <h4 class="font-bold">Dirección</h4>
+                                <p class="text-slate-400">Mariano Matamoros #44, Col. Centro<br>Cuernavaca, Morelos,
+                                    C.P. 62000</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-2xl">📞</span>
+                            <div>
+                                <h4 class="font-bold">Teléfonos</h4>
+                                <p class="text-slate-400">Taller: <a href="tel:7773146558"
+                                        class="text-blue-400 hover:underline">777 314 6558</a></p>
+                                <p class="text-slate-400">WhatsApp: <a href="https://wa.me/527775630603"
+                                        class="text-green-400 hover:underline">777 563 0603</a></p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-2xl">✉️</span>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p><a href="mailto:Mec.ferretera@gmail.com"
+                                        class="text-purple-400 hover:underline">Mec.ferretera@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="text-2xl">🕐</span>
+                            <div>
+                                <h4 class="font-bold">Horarios</h4>
+                                <p class="text-slate-400">Lun - Vie: 9:00 AM - 6:00 PM</p>
+                                <p class="text-slate-400">Sábado: 9:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/527775630603" target="_blank"
+                        class="mt-6 w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-400 text-white font-bold px-6 py-4 rounded-xl transition">
+                        📱 Escríbenos por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Corporativo -->
+    <footer class="bg-slate-950 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <h3 class="font-bold text-2xl mb-4">🔧 Mecánica <span class="text-industrial-400">Ferretera</span>
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-4">Centro de Servicio Técnico y venta de herramienta nueva y
+                        refacciones originales en Cuernavaca.</p>
+                    <p class="text-slate-400 text-sm">📍 Mariano Matamoros #44, Col. Centro, Cuernavaca, Morelos, C.P.
+                        62000</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Servicios</h4>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li><a href="#servicios" class="hover:text-industrial-400">Reparación Herramientas</a></li>
+                        <li><a href="#servicios" class="hover:text-industrial-400">Línea Gastronómica</a></li>
+                        <li><a href="#servicios" class="hover:text-industrial-400">Motores Eléctricos</a></li>
+                        <li><a href="#venta" class="hover:text-yellow-400">Venta de Herramienta</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contacto</h4>
+                    <ul class="text-sm text-slate-400 space-y-2">
+                        <li>� <a href="tel:7773146558" class="hover:text-blue-400">777 314 6558</a></li>
+                        <li>� <a href="https://wa.me/527775630603" class="hover:text-green-400">777 563 0603</a></li>
+                        <li>✉️ <a href="mailto:Mec.ferretera@gmail.com"
+                                class="hover:text-purple-400">Mec.ferretera@gmail.com</a></li>
+                        <li class="pt-2">🕐 Lun-Vie: 9-6 | Sáb: 9-2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-500 text-sm">© 2024 Mecánica Ferretera. Todos los derechos reservados.</p>
+                <p class="text-slate-600 text-xs">RFC: JIOS910905EY6</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function calcularVisita(zona) {
+            const precios = { centro: 350, periferia: 550, foraneo: 900 };
+            const resultado = document.getElementById('resultado');
+            const precio = document.getElementById('precio');
+
+            document.querySelectorAll('.zone-btn').forEach(btn => {
+                btn.classList.remove('border-industrial-400');
+                btn.classList.add('border-transparent');
+            });
+            event.target.closest('.zone-btn').classList.remove('border-transparent');
+            event.target.closest('.zone-btn').classList.add('border-industrial-400');
+
+            precio.textContent = `$${precios[zona]} MXN`;
+            resultado.classList.remove('hidden');
+            resultado.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+</body>
+
+</html>
